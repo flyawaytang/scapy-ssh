@@ -1,0 +1,3 @@
+from scapy.all import *
+ssh_pkt = rdpcap('ssh.pcap')
+ssh_pkt[0][Raw]=fuzz(Raw())
